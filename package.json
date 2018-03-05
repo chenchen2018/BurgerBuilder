@@ -2,6 +2,7 @@
   "name": "burgerbuilder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chenchen2018.github.io/BurgerBuilder/",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -47,7 +48,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "burgerbuilder -d build"
   },
   "jest": {
     "collectCoverageFrom": [
